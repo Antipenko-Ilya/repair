@@ -26,6 +26,8 @@ img {
 .container {
   width: 1170px;
   margin: 0 100px 0 150px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (max-width: 1200px) {
@@ -85,8 +87,9 @@ img {
 .navbar__button {
   margin-left: 30px;
   font-size: 13px;
-  font-family: 'Museo Sans Bold', sans-serif;
+  font-family: 'Museo Sans Bold', sans-serif; 
   font-weight: 700;
+  cursor: pointer;
 }
 
 .navbar__phone {
