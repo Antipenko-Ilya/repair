@@ -8,11 +8,13 @@
         display: flex
         text-align: right
     &__address
-        font-size: 15px
+        font-size: 13px
         display: flex
         flex-direction: column
     &__button
         margin-left: 30px
+        font-size: 13px
+        +bold
     &__phone 
         display: inline-block
         color: $text-color
@@ -20,6 +22,7 @@
         font-weight: 700
         text-decoration: none
         margin-top: 10px
+        +bold
 @media (max-width: 768px)
     .navbar
         &__contacts
