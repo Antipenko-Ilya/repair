@@ -14,9 +14,6 @@
   font-style: normal;
 }
 
-*{
-  box-sizing: border-box;
-}
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
@@ -29,15 +26,12 @@ img {
 .container {
   width: 1170px;
   margin: 0 100px 0 150px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 @media (max-width: 1200px) {
   .container {
     width: 760px;
   }
-  .
 }
 
 @media (max-width: 768px) {
@@ -53,9 +47,11 @@ img {
   border: none;
   padding: 18px 30px;
 }
+
 .button:hover {
   background-color: #ffdb33;
 }
+
 .section {
   padding: 90px 0;
 }
@@ -77,6 +73,7 @@ img {
   font-size: 15px;
   border-radius: 10px;
 }
+
 .navbar {
   padding: 8px 0;
 }
@@ -114,9 +111,8 @@ img {
 .navbar__button {
   margin-left: 30px;
   font-size: 13px;
-  font-family: 'Museo Sans Bold', sans-serif; 
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
-  cursor: pointer;
 }
 
 .navbar__phone {
@@ -135,23 +131,16 @@ img {
     display: none;
   }
   .navbar__button {
-    font-size: 10px;
-    width: 137px;
-    height: 39px;
-    border-radius: 5px;
-    padding: 15px 20px 14px 20px;
-}
+    font-size: 12px;
+    padding: 15px 26px;
+  }
   .navbar__logo {
     width: 90px;
-  }
-  .navbar-contacts {
-    display: none;
   }
 }
 
 .hero {
   padding: 50px 0;
-  background-color: #f5f5f5;
 }
 
 .hero-block {
@@ -163,7 +152,7 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-right: 100px;
+  padding-right: 140px;
 }
 
 .hero-text__title {
@@ -199,9 +188,7 @@ img {
           align-items: center;
   margin-bottom: 25px;
 }
-.hero-list__item:last-child {
-  margin-bottom: 0;
-}
+
 .hero-list__image {
   width: 40px;
   height: 40px;
@@ -261,13 +248,10 @@ img {
 }
 
 .offer {
-  background: url("../img/hero/offen-bg.png") no-repeat;
+  background-image: url("../img/offen-bg.png") no repeat;
   background-position: center right;
   background-size: contain;
   position: relative;
-}
-.offer__form{
-  padding-right: 30px;
 }
 
 .offer:before {
@@ -277,7 +261,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background: #fff;
+  background-color: #fff;
 }
 
 .offer-block {
@@ -307,9 +291,8 @@ img {
 }
 
 .offer__button {
-  width: 89%;
+  width: 100%;
   min-height: 70px;
-  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
