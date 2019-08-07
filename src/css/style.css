@@ -267,7 +267,7 @@ img {
   position: relative;
 }
 .offer__form{
-  padding-right: 30px;
+  padding-right: 90px;
 }
 
 .offer:before {
@@ -300,6 +300,7 @@ img {
 .offer__input {
   margin-bottom: 30px;
   width: 240px;
+  height: 65px;
 }
 
 .offer__input:first-child {
@@ -307,7 +308,7 @@ img {
 }
 
 .offer__button {
-  width: 89%;
+  width: 100%;
   min-height: 70px;
   cursor: pointer;
 }
@@ -316,7 +317,7 @@ img {
   .offer {
     background-size: cover;
   }
-  .offer-input {
+  .offer__input {
     width: 100%;
     margin-bottom: 10px;
   }
@@ -329,9 +330,27 @@ img {
   .offer {
     background: #fff;
   }
+  .offer__title {
+    width: 260px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+.offer__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+  }
   .offer-block {
-    width: 100%;
+    width:  275px;
     padding-right: 0;
+  }
+  .offer__button {
+    height: 70px;
+  }
+   .offer__form {
+    padding: 0;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
