@@ -64,6 +64,7 @@ img {
   font-size: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -290,6 +291,7 @@ img {
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -323,8 +325,31 @@ img {
   font-weight: 400;
   line-height: 24px;
 }
-.communication srong{
+.communication srong {
   font-weight: 700;
+}
+.portfolio {
+  background: #f5f5f5 url(../portfolio-img/portfolio-pattern.png) repeat-y center left;
+  background-size: 50%;
+}
+.portfolio__title {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.btn_up{
+  right: 50px;
+  margin: 0;
+  font-size: 90px;
+  position: fixed;
+  bottom: 50px;
+  outline:none;
+  width: 52px;
+  color:#ffd200;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 0px 0 0 28px;
+  cursor:pointer;
 }
 .modal {
   position: fixed;
