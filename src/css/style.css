@@ -439,7 +439,6 @@ img {
   height: 25px;
   position: absolute;
   background: url(../img/step/arrow.png) no-repeat center;
-  top: 0;
 }
 .step__image {
   width: 100px;
