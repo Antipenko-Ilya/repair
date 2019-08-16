@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.css">
 
 </head>
 <body>
@@ -105,6 +106,84 @@
                 <div class="arrows__right"><img src="portfolio-img/right-arrow.png" alt=""></div>
             </div>
         </section>
+        <section class="section price">
+            <div class="container">
+                <h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!</h2>
+                <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
+                <div class="cards">
+                    <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card__image"><img src="img/price/job-img-1.png" alt=""></div>
+                        <div class="card__text">
+                            <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+                            <a href="#" class="card__link">Узнать цены</a>
+                        </div>
+                    </div>
+                    <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="card__image"><img src="img/price/job-img-2.png" alt=""></div>
+                        <div class="card__text">
+                            <h4 class="card__title">Ремонт комнат и квартир</h4>
+                            <a href="#" class="card__link">Узнать цены</a>
+                        </div>
+                    </div>
+                    <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="card__image"><img src="img/price/job-img-3.png" alt=""></div>
+                        <div class="card__text">
+                            <h4 class="card__title">Отделка офисных помещений</h4>
+                            <a href="#" class="card__link">Узнать цены</a>
+                        </div>
+                    </div>
+                    <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="card__image"><img src="img/price/job-img-4.png" alt=""></div>
+                        <div class="card__text">
+                            <h4 class="card__title">Ремонт в новостройках</h4>
+                            <a href="#" class="card__link">Узнать цены</a>
+                        </div>
+                    </div>
+                    <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="card__image"><img src="img/price/job-img-5.png" alt=""></div>
+                        <div class="card__text">
+                            <h4 class="card__title">Ремонт кухонь</h4>
+                            <a href="#" class="card__link">Узнать цены</a>
+                        </div>
+                    </div>
+                    <div class="card price__card wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="card__image"><img src="img/price/job-img-6.png" alt=""></div>
+                        <div class="card__text">
+                            <h4 class="card__title">Ремонт дач и коттеджей</h4>
+                            <a href="#" class="card__link">Узнать цены</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section steps">
+            <div class="container">
+                <h2 class="section-title steps__title">Наши специалисты готовы выехать на замер в любое удобное для Вас время</h2>
+                <span class="section-subtitle steps__subtitle">5 шагов до ремонта</span>
+                <div class="steps-block">
+                    <div class="step">
+                        <div class="step__image"><img src="img/step/operatop.png" alt=""></div>
+                        <p class="step__text">Вы звоните нам или оставляете заявку</p>
+                    </div>
+                    <div class="step">
+                        <div class="step__image"><img src="img/step/clock.png" alt=""></div>
+                        <p class="step__text">Согласуем удобное для Вас время выезда специалиста на замер</p>
+                    </div>
+                    <div class="step">
+                        <div class="step__image"><img src="img/step/money.png" alt=""></div>
+                        <p class="step__text">Рассчитываем смету согласовываем с Вами</p>
+                    </div>
+                    <div class="step">
+                        <div class="step__image"><img src="img/step/list.png" alt=""></div>
+                        <p class="step__text">Подписываем договор закупаем материал по оптовым ценам</p>
+                    </div>
+                    <div class="step">
+                        <div class="step__image"><img src="img/step/calendar.png" alt=""></div>
+                        <p class="step__text">Выполняем ремонт в указанные сроки</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <div class="goUp">
         <span class="btn_up">&uArr;</span>
@@ -118,7 +197,9 @@
     <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script>
+        new WOW().init();
         $(document).ready(function(){
             $('.slider').slick({
                 slidesToShow: 3,
