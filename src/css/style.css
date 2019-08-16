@@ -337,6 +337,22 @@ img {
   margin: auto;
   margin-bottom: 100px;
 }
+.slider__image {
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.arrows__left ,.arrows__right {
+  cursor: pointer;
+}
 .btn_up{
   right: 50px;
   margin: 0;
