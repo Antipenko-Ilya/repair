@@ -472,6 +472,60 @@ img {
   text-align: center;
   margin-bottom: 58px;
 }
+.brif {
+  background-image: url(../img/brif/brif-color-bg.jpg),  url(../img/brif/brif-bg.jpg);
+  background-position: left center, center right;
+  background-size: 50%, contain;
+  background-repeat:repeat-y, no-repeat;
+}
+.brif-block {
+  display: flex;
+}
+.brif__interview {
+  flex-basis: 50%;
+}
+.brif__form {
+  flex-basis: 50%;
+}
+.interview {
+  padding-right: 70px;
+}
+.interview__title {
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif; 
+  font-weight: 700;
+}
+.interview__subtitle {
+display: block;
+margin-bottom: 95px;
+font-size: 16px;
+}
+.interview-list {
+  list-style: none;
+  padding: 0;
+}
+.interview-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+.interview-list__counter {
+  display: inline-block;
+  margin-right: 30px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #333333;
+  border-radius: 50%
+}
+.interview-list__text {
+  max-width: 400px;
+}
 .btn_up{
   right: 50px;
   margin: 0;
@@ -529,7 +583,15 @@ img {
   }
   .offer__button {
     font-size: 13px;
-
+  }
+  .step {
+    margin-bottom: 30px;
+  }
+  .steps:after {
+    display: none;
+  }
+  .steps-block {
+    flex-direction: column;
   }
 }
 
@@ -544,7 +606,7 @@ img {
     line-height: 20px;
   }
 
-.offer__subtitle {
+  .offer__subtitle {
     font-size: 14px;
     font-weight: 400;
   }
@@ -555,9 +617,16 @@ img {
   .offer__button {
     height: 70px;
   }
-   .offer__form {
+  .offer__form {
     padding: 0;
     text-align: center;
+  }
+  .step {
+    margin-bottom: 30px;
+    flex-basis: 50%;
+  }
+  .steps-block {
+    justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
