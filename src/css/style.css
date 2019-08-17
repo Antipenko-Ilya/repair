@@ -37,7 +37,6 @@ img {
   .container {
     width: 760px;
   }
-  .
 }
 
 @media (max-width: 768px) {
@@ -337,10 +336,8 @@ img {
   margin: auto;
   margin-bottom: 100px;
 }
-.slider__image {
-  margin-right: auto;
-  margin-left: auto;
-  
+.slider__item {
+  margin-left: 10px;
 }
 .portfolio__arrows {
   max-width: 120px;
@@ -486,6 +483,8 @@ img {
 }
 .brif__form {
   flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
 }
 .interview {
   padding-right: 70px;
@@ -525,6 +524,32 @@ font-size: 16px;
 }
 .interview-list__text {
   max-width: 400px;
+}
+.form__title {
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif; 
+  font-weight: 700;
+}
+.form__subtitle {
+  display: block;
+  margin-bottom: 95px;
+  font-size: 16px;
+}
+.brif__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+.brif__button {
+  height: 70px;
+  width: 100%;
+  max-width: 370px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.form__description {
+  display: block;
 }
 .btn_up{
   right: 50px;
@@ -587,15 +612,65 @@ font-size: 16px;
   .step {
     margin-bottom: 30px;
   }
-  .steps:after {
+  .steps:before {
+    display: none;
+  }
+  .step:after {
     display: none;
   }
   .steps-block {
     flex-direction: column;
   }
+
+  .brif__form {
+    flex-basis: 50%;
+    padding-left: 200px;
+    text-align: center;
+  }
+  .interview {
+    padding-right: 30px;
+  }
+  .interview__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .interview__subtitle {
+    margin-bottom: 20px;
+  }
+  .interview-list {
+    font-size: 14px;
+  }
+  .interview-list__counter {
+    margin-right: 20px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .form__title {
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-family: 'Museo Sans Bold', sans-serif; 
+    font-weight: 700;
+  }
+  .brif__form {
+    padding-left: 30px;
+  }
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .form__subtitle {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 768px) {
+  .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .offer {
     background: #fff;
   }
@@ -627,6 +702,22 @@ font-size: 16px;
   }
   .steps-block {
     justify-content: center;
+  }
+  .brif {
+    background-image: url(../img/brif/brif-color-bg.jpg),  url(../img/brif/brif-bg.jpg);
+    background-position: top center, center bottom;
+    background-size: 100% 50%, cover;
+    background-repeat:repeat-x, no-repeat;
+  }
+  .brif-block {
+    flex-direction: column;
+  }
+  .brif__form {
+    margin-top: 80px;
+  }
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */
