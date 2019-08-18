@@ -597,7 +597,9 @@ font-size: 16px;
   top: 0;
   right: 0;
 }
-
+.error {
+  border: 1px solid red;
+}
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;

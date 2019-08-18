@@ -19,6 +19,63 @@
 
 // });
 // modalDialogClose.addEventListener('click', () => closeModal());
+
+
+
+$(document).ready(() => {
+    $('#offer-form').validate({
+        rules: {
+            username: {
+                required: true,
+                minlength: 2
+            },
+            phone: {
+                required: true,
+            }
+
+        },
+        messages:  {
+            username: {
+                required: 'Заполните поле',
+                minlength: 'Неккоректное количевство символов'
+            },
+            phone: {
+                required: 'Заполните поле',
+            }
+        }
+    });
+    $('#brif-form').validate({
+        rules: {
+            username: {
+                required: true,
+                minlength: 2
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            phone: {
+                required: true,
+            }
+
+        },
+        messages:  {
+            username: {
+                required: 'Заполните поле',
+                minlength: 'Неккоректное количевство символов'
+            },
+            email: {
+                required: 'Заполните поле',
+                email: 'Введите корректный emai'
+            },
+            phone: {
+                required: 'Заполните поле',
+            }
+        }
+    });
+    $('.phone').mask('+7 (999) 999-99-99');
+});
+
 new WOW().init();
 $(document).ready(function(){
     $('.slider').slick({
@@ -48,7 +105,17 @@ $(document).ready(function(){
 $(document).ready(() => {
     $('#offer-form').on('submit', () => {
         event.preventDefault();
-        $.ajax
+        $.ajax({
+            url: 'mail.php',
+            type: 'POST',
+            data: $(this).serialize(),
+            success: (data) => {
+               $('.success').text(data + ', ваша форма отправленна');
+            },
+            error: (jqXHR, textStatus) => {
+                console.log(jqXHR, textStatus);
+            } 
+        });
     });
 });
 $(document).ready(() => {
