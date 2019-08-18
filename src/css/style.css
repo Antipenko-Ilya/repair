@@ -551,6 +551,46 @@ font-size: 16px;
 .form__description {
   display: block;
 }
+.map {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.footer {
+  position: relative;
+}
+.contacts {
+  flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+.contacts__title {
+  font-family: 'Museo Sans Bold', sans-serif; 
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+}
+.contacts-block {
+  display: flex;
+  justify-content: flex-end;
+}
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+.contacts-list__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 39px;
+}
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+}
 .btn_up{
   right: 50px;
   margin: 0;
