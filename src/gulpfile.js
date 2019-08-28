@@ -31,7 +31,7 @@ gulp.task('fonts', (cb) => {
     cb();
 });
 gulp.task('tinypng', function (cb) {
-    return gulp.src('./img/**/*.{png, jpg, jpeg}')
+    return gulp.src('./img/price/*.jpg')
         .pipe(tinyPNG('qmKbkmmhx68WmX3mMhP799VM91R585dy'))
-        .pipe(gulp.dest('dist/img'));
+        .pipe(gulp.dest('dist/img/price'));
 });
