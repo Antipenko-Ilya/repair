@@ -874,9 +874,11 @@ font-size: 16px;
 }
 .contacts__title {
   font-family: 'Museo Sans Bold', sans-serif; 
+  width: 295px;
   font-weight: 700;
   font-size: 22px;
   line-height: 1.4;
+  margin-bottom: 100px;
 }
 .contacts-block {
   display: flex;
@@ -886,10 +888,14 @@ font-size: 16px;
   padding: 0;
   list-style: none;
 }
+.contacts-list ul {
+  padding: 0;
+}
 .contacts-list__item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 39px;
+  width: 183px;
+  margin-bottom: 40px;
 }
 .contacts-list__icon {
   width: 20px;
@@ -902,7 +908,9 @@ font-size: 16px;
 .contacts-list__text strong{
   font-weight: 900;
 }
-
+.contacts-list__text {
+  line-height: 1.4;
+}
 .btn_up{
   right: 50px;
   margin: 0;
@@ -1140,6 +1148,10 @@ font-size: 16px;
     padding: 0;
     text-align: center;
   }
+  .communication {
+    font-size: 15px;
+    line-height: 1.4;
+  }
   .portfolio__title {
     margin-bottom: 40px;
   }
@@ -1163,7 +1175,7 @@ font-size: 16px;
     flex-direction: column;
   }
   .brif__form {
-    margin-top: 80px;
+    margin-top: 207px;
     padding-left: 0;
   }
   .interview-list__counter {

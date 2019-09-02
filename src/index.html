@@ -227,7 +227,7 @@
         <div class="container contacts-container">
             <div class="contacts-block">
                 <div class="contacts">
-                    <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h3>
+                    <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас<br> по всем вопросам ремонта</h3>
                     <div class="contacts-list">
                         <ul>
                             <li class="contacts-list__item">
@@ -254,8 +254,21 @@
     </div>
     <div class="modal">
         <div class="modal-dialog">
-            <button class="modal-dialog__close">&times;</button>    
-           <h4 class="modal-dialog__title">Всплывающее окно</h4>
+            <button class="modal-dialog__close">&times;</button>
+            <div class="modal-column">
+                <div class="modal-content"></div>
+            </div>
+            <div class="modal-column">
+                <h3 class="form__title">Оставьте заявку на бесплатный рассчет ремонта по телефону</h3>
+                <span class="form__subtitle">Для этого заполните форму ниже</span>
+                <form action="#" id="brif-form">
+                    <input type="text" name="username" class="input brif__input" placeholder="Вашe имя">
+                    <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
+                    <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
+                    <button class="button brif__button">Узнать стоимость</button>
+                    <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
+                </form>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
