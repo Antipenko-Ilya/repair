@@ -468,6 +468,11 @@ img {
   font-weight: 700;
 }
 
+.text_phone {
+ text-decoration: none;
+ color: #000000;
+}
+
 .hero {
   padding: 50px 0;
   background-color: #f5f5f5;
@@ -611,15 +616,22 @@ img {
   font-weight: 700;
 }
 .portfolio {
-  background: #f5f5f5 url(../portfolio-img/portfolio-pattern.png) repeat-y center left;
+  background: #f5f5f5 url(../img/portfolio-img/portfolio_pattern.png) repeat-y center left;
   background-size: 50%;
 }
 .portfolio__title {
   margin: auto;
   margin-bottom: 100px;
 }
+.slider.slick-slide {
+  margin: 0 10px;
+}
+ 
+.slider.slick-list {
+    margin: 0 -10px;
+}  
 .slider__item {
-  margin-left: 10px;
+  margin-left: 0 auto;
 }
 .portfolio__arrows {
   max-width: 120px;
@@ -705,7 +717,7 @@ img {
 
 .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .steps-block {
@@ -754,7 +766,7 @@ img {
 .brif {
   background-image: url(../img/brif/brif-color-bg.jpg),  url(../img/brif/brif-bg.jpg);
   background-position: left center, center right;
-  background-size: 50%, contain;
+  background-size: 50%, cover;
   background-repeat:repeat-y, no-repeat;
 }
 .brif-block {
@@ -813,7 +825,7 @@ font-size: 16px;
   font-family: 'Museo Sans Bold', sans-serif; 
   font-weight: 700;
 }
-.form__subtitle {n
+.form__subtitle {
   display: block;
   margin-bottom: 95px;
   font-size: 16px;
@@ -941,7 +953,7 @@ font-size: 16px;
 }
 @media (max-width: 1200px) {
   .container {
-    width: 760px;
+    width: 90%;
   }
   .hero-block {
     -webkit-box-orient: vertical;
@@ -966,7 +978,6 @@ font-size: 16px;
     font-size: 13px;
   }
   .offer-block {
-    margin-left: auto;
     margin-right: auto;
   }
   .offer-container {
@@ -1098,7 +1109,8 @@ font-size: 16px;
     font-weight: 400;
   }
   .offer-block {
-    width:  275px;
+    width:  70%;
+    margin-left: auto;
     padding-right: 0;
   }
   .offer__button {
@@ -1112,8 +1124,7 @@ font-size: 16px;
     margin-bottom: 40px;
   }
   .slider__image {
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 20px;
   }
   .step {
     margin-bottom: 30px;
