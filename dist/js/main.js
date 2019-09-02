@@ -119,7 +119,7 @@ $(document).ready(() => {
     });
 });
 $(document).ready(() => {
-    let button = $('.navbar__button');
+    let button = $('.button');
     let modal = $('.modal');
     let close = $('.modal-dialog__close');
 
