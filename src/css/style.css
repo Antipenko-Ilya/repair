@@ -556,8 +556,21 @@ img {
 }
 .offer__form{
   padding-right: 90px;
+  position: relative;
 }
 
+.offer__form label.error{
+  position: absolute;
+  top: 70px;
+}
+
+.offer__form #username-error{
+  left: 60px;
+}
+
+.offer__form #phone-error{
+  left: 314px;
+}
 .offer:before {
   content: '';
   width: 50%;
@@ -985,6 +998,13 @@ font-size: 16px;
     text-align: center;
     justify-content: center;
   }
+
+  .offer__form label.error{
+    position: static;
+  }
+  .slider__image {
+    margin: 0 auto;
+  }
   .step {
     margin-bottom: 30px;
   }
@@ -1122,9 +1142,6 @@ font-size: 16px;
   }
   .portfolio__title {
     margin-bottom: 40px;
-  }
-  .slider__image {
-    padding-left: 20px;
   }
   .step {
     margin-bottom: 30px;

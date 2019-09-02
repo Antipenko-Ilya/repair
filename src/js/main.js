@@ -92,7 +92,7 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 865,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
