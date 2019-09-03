@@ -935,7 +935,9 @@ font-size: 16px;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
-
+.modal-column {
+  flex-basis: 50%;
+}
 .modal_active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -943,9 +945,12 @@ font-size: 16px;
 }
 
 .modal-dialog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   margin: auto;
-  max-width: 450px;
+  max-width: 1000px;
   width: 90%;
   min-width: 200px;
   background-color: #fff;
@@ -991,6 +996,12 @@ font-size: 16px;
   .offer {
     background-size: cover;
   }
+  
+  .offer__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+  }
   .offer__input {
     width: 100%;
     margin-bottom: 10px;
@@ -1015,15 +1026,17 @@ font-size: 16px;
   }
   .step {
     margin-bottom: 30px;
-  }
-  .steps:before {
-    display: none;
+    text-align: center;
+    position: relative;
   }
   .step:after {
     display: none;
   }
   .steps-block {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
   }
   .communication {
     font-size: 14px;
@@ -1132,10 +1145,6 @@ font-size: 16px;
     line-height: 20px;
   }
 
-  .offer__subtitle {
-    font-size: 14px;
-    font-weight: 400;
-  }
   .offer-block {
     width:  70%;
     margin-left: auto;
@@ -1154,6 +1163,7 @@ font-size: 16px;
   }
   .portfolio__title {
     margin-bottom: 40px;
+    width: 375px;
   }
   .step {
     margin-bottom: 30px;
@@ -1161,6 +1171,9 @@ font-size: 16px;
   }
   .steps-block {
     justify-content: center;
+  }
+  .step:after {
+    display: none;
   }
   .step__image {
     margin-bottom: 15px;
@@ -1178,8 +1191,26 @@ font-size: 16px;
     margin-top: 207px;
     padding-left: 0;
   }
+  .interview {
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
   .interview-list__counter {
     flex-shrink: 0;
+  }
+  .interview__title {
+    width: 348px;
+    text-align: center;
+}
+
+  .interview-list {
+    width: 300px;
+  }
+  .interview-list__elem {
+    width: 200px;
   }
   .section {
     padding-top: 60px;
@@ -1200,9 +1231,23 @@ font-size: 16px;
   .contacts-container {
     width: 90%;
   }
+  .contacts-block {
+    justify-content: center;
+    margin-left: 0;
+}
+
   .contacts__title {
     font-size: 18px;
+    text-align: center;
+    margin-bottom: 45px;
   }
+  .contacts-list ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
   .contacts-list__text {
     font-size: 16px;
     max-width: 140px;
@@ -1212,6 +1257,34 @@ font-size: 16px;
     order: 1;
   }
 }
+@media (max-width: 500px) {
+  .steps-block {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .interview__title {
+    width: 298px;
+    text-align: left;
+  }
+  .contacts-list__item {
+    line-height: 26px;
+}
+  .contacts__title {
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 45px;
+  }
+  .contacts-block {
+    justify-content: flex-start;
+    margin-left: 25px;
+  }
+  .contacts-list ul {
+    justify-content: flex-start;
+    align-items: left;
+    
+  } 
+}
+
 /* Slider */
 .slick-slider
 {
