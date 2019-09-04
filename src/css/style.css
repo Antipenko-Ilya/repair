@@ -455,6 +455,7 @@ img {
   font-family: 'Museo Sans Bold', sans-serif; 
   font-weight: 700;
   cursor: pointer;
+  outline: none;
 }
 
 .navbar__phone {
@@ -603,6 +604,7 @@ img {
   margin-bottom: 30px;
   width: 240px;
   height: 65px;
+  outline: none;
 }
 
 .offer__input:first-child {
@@ -645,6 +647,7 @@ img {
 }  
 .slider__item {
   margin-left: 0 auto;
+  outline: none;
 }
 .portfolio__arrows {
   max-width: 120px;
@@ -788,24 +791,27 @@ img {
 .brif-block {
   display: flex;
 }
+.brif__input {
+  outline: none;
+}
 .brif__interview {
   flex-basis: 50%;
 }
 .brif__form {
   flex-basis: 50%;
-  padding-left: 200px;
+  padding-left: 200px;.slick-slide img
   text-align: center;
 }
 .interview {
-  padding-right: 70px;
+  padding-right: 70px;.slick-slide img
 }
 .interview__title {
-  margin-bottom: 50px;
+  margin-bottom: 50px;.slick-slide img
   font-size: 22px;
-  font-family: 'Museo Sans Bold', sans-serif; 
+  font-family: 'Museo .slick-slide img
   font-weight: 700;
 }
-.interview__subtitle {
+.interview__subtitle {.slick-slide img
 display: block;
 margin-bottom: 95px;
 font-size: 16px;
@@ -1652,5 +1658,6 @@ font-size: 16px;
 .fadeInUp {
   animation-name: fadeInUp;
 }
+
 
 /*# sourceMappingURL=style.css.map */

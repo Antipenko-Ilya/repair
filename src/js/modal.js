@@ -7,16 +7,19 @@ $(document).ready(() => {
     let my;
     console.log('*****cardLink*****', cardLink );
 
-    button.on('click', () =>{
+    button.on('click', (event) =>{
+        event.preventDefault();
+        modal.addClass('modal_active');
+        let target = event.target.attributes["1"].nodeValue;
+        content.innerHTML = `<iframe src="${target+'.html'}" style="border: none; width: 100%; height: 543px;">
+        Ваш браузер не поддерживает плавающие фреймы!
+     </iframe>`;
         modal.addClass('modal_active');
         $(document).mouseup(function (e) {
             let container = $(".modal");
             if (container.has(e.target).length === 0){
                 container.removeClass('modal_active');
             }
-            content.innerHTML = `<iframe src="new.html" style="border: none; width: 100%; height: 543px;">
-            Ваш браузер не поддерживает плавающие фреймы!
-         </iframe>`;
         });
     });
     close.on('click', () =>{
