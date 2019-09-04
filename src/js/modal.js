@@ -1,7 +1,10 @@
 $(document).ready(() => {
     let button = $('.navbar__button');
     let modal = $('.modal');
+    let close = $('.modal-dialog__close');
     let cardLink = $('.card__link');
+    let content = document.querySelector('#modal-content');
+    let my;
     console.log('*****cardLink*****', cardLink );
 
     button.on('click', () =>{
@@ -11,18 +14,21 @@ $(document).ready(() => {
             if (container.has(e.target).length === 0){
                 container.removeClass('modal_active');
             }
+            content.innerHTML = `<iframe src="new.html" style="border: none; width: 100%; height: 543px;">
+            Ваш браузер не поддерживает плавающие фреймы!
+         </iframe>`;
         });
+    });
+    close.on('click', () =>{
+        modal.removeClass('modal_active');
     });
     cardLink.on('click', event => {
         event.preventDefault();
         modal.addClass('modal_active');
         let target = event.target.attributes["1"].nodeValue;
-        console.log('*****target*****', target+'.html');
-        let content =  document.querySelector('#modal-content');
-        content.innerHTML = `<iframe src="${target+'.html'}" style="border: none; width: 100%; height: 600px;">
+        content.innerHTML = `<iframe src="${target+'.html'}" style="border: none; width: 100%; height: 543px;">
         Ваш браузер не поддерживает плавающие фреймы!
      </iframe>`;
-        console.log('**********', content );
         $(document).mouseup(function (e) {
             let container = $(".modal");
             if (container.has(e.target).length === 0){
