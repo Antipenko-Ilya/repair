@@ -763,6 +763,9 @@ img {
   margin: auto;
   border-radius: 50%; 
 }
+/* .step__image:hover {
+  border: 5px solid #ffcf40;
+} */
 .step__text {
   font-size: 14px;
   margin: auto;
@@ -943,6 +946,50 @@ font-size: 16px;
   display: -ms-flexbox;
   display: flex;
 }
+.modal-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal-form__title{
+  text-align: center;
+  font-size: 22px;
+  width: 291px;
+  font-weight: 700;
+  font-family: 'Museo Sans Bold';
+}
+.modal-form__subtitle {
+    width: 338px;
+    height: 46px;
+    color: #333333;
+    font-family: "Museo Sans Light";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    margin: 14px;
+}
+.modal-form__description {
+  text-align: center;
+  width: 271px;
+  height: 35px;
+  margin-bottom: 15px;
+  color: #333333;
+  font-family: "Museo Sans Light";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+  .form__description-phone a{
+    text-decoration: none;
+    width: 211px;
+    height: 21px;
+    color: #333333;
+    font-family: "Museo Sans Light";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+  }
 
 .modal-dialog {
   display: flex;
@@ -1201,17 +1248,24 @@ font-size: 16px;
   .interview-list__counter {
     flex-shrink: 0;
   }
+
   .interview__title {
     width: 348px;
     text-align: center;
-}
+  }
 
+  .interview-list__elem {
+    width: 232px;
+  }
+  
   .interview-list {
     width: 300px;
   }
-  .interview-list__elem {
-    width: 200px;
+  .interview-list__text {
+    font-size: 17px;
+    max-width: 300px;
   }
+  
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1268,7 +1322,13 @@ font-size: 16px;
   }
   .contacts-list__item {
     line-height: 26px;
-}
+  }
+ .interview-list__elem {
+    width: 200px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+  }
   .contacts__title {
     font-size: 22px;
     text-align: left;
