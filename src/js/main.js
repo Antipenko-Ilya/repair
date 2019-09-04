@@ -118,35 +118,3 @@ $(document).ready(() => {
         });
     });
 });
-$(document).ready(() => {
-    let button = $('.navbar__button');
-    let modal = $('.modal');
-    let close = $('.modal-dialog__close');
-    let cardLink = $('.card__link');
-    console.log('*****cardLink*****', cardLink );
-
-    button.on('click', () =>{
-        modal.addClass('modal_active');
-    });
-    cardLink.on('click', event => {
-        const cardLink = this;
-        event.preventDefault();
-        modal.addClass('modal_active');
-        var target = $(cardLink).attr('data-target');
-        console.log('*****target*****', cardLink);
-        $('.modal-content').load(target+'.html');
-        // console.log('**********', target );
-    });
-    close.on('click', () =>{
-        modal.removeClass('modal_active');
-    });
-    $(window).scroll(() => $(this).scrollTop() > 50 ?  $('.btn_up').fadeIn() : $('.btn_up').fadeOut());
-    
-    $('.btn_up').click(() => {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
-});
-
