@@ -131,6 +131,8 @@ $(document).ready(() => {
     
     $('#offer-form').on('submit', () => {
         var name = document.querySelector('#username').value;
+        var phone = document.querySelector('#userphone').value;
+        console.log(name);
         event.preventDefault();
         console.log(')()()()()()(',name);
         $.ajax({
@@ -140,6 +142,8 @@ $(document).ready(() => {
             success: (data) => {
                 if(data){
                     $('.success').text(data + ', ваша форма отправленна');
+                    $("#username").val('');
+                    $("#userphone").val(''); 
                 } 
             },
             error: (jqXHR, textStatus) => {
