@@ -103,18 +103,76 @@ $(document).ready(function(){
     });
 });
 $(document).ready(() => {
+    
+    
+    // $("#offer__button").on("click", function(){
+    //     let name = $("#username"),
+    //     phone = $("#userphone"); 
+    //     console.log(name);
+
+    //     $.ajax({
+    //         url: 'mail.php',
+    //         type: 'POST',
+    //         chahe: false,
+    //         data: {'name': name, 'phone': phone},
+    //         beforeSend: () => {
+    //             $("#offer__button").prop("disabled");
+    //         },
+    //         success: (data) => {
+    //             alert(data);
+    //         }
+    //     });
+    // });
+
+
+
+
+
+    
     $('#offer-form').on('submit', () => {
+        var name = document.querySelector('#username').value;
         event.preventDefault();
+        console.log(')()()()()()(',name);
         $.ajax({
             url: 'mail.php',
             type: 'POST',
-            data: $(this).serialize(),
+            data: {'username': name},
             success: (data) => {
-               $('.success').text(data + ', ваша форма отправленна');
+                if(data){
+                    $('.success').text(data + ', ваша форма отправленна');
+                } 
             },
             error: (jqXHR, textStatus) => {
                 console.log(jqXHR, textStatus);
             } 
         });
+    });
+});
+$(document).ready(() => {
+    let button = $('.navbar__button');
+    let modal = $('.modal');
+    let close = $('.modal-dialog__close');
+    let cardLink = $('.card__link');
+
+    button.on('click', () =>{
+        modal.addClass('modal_active');
+    });
+    cardLink.on('click', event => {
+        const cardLink = this;
+        event.preventDefault();
+        modal.addClass('modal_active');
+        var target = $(cardLink).attr('data-target');
+        $('.modal-content').load(target+'.html');
+    });
+    close.on('click', () =>{
+        modal.removeClass('modal_active');
+    });
+    $(window).scroll(() => $(this).scrollTop() > 50 ?  $('.btn_up').fadeIn() : $('.btn_up').fadeOut());
+    
+    $('.btn_up').click(() => {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
     });
 });
