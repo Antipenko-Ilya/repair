@@ -797,7 +797,7 @@ img {
 .step__text {
   font-size: 14px;
   margin: 0 auto;
-  max-width: 149px;
+  max-width: 180px;
   margin-top: 20px;
   line-height: 1.4;
   font-weight: 700;
@@ -838,6 +838,7 @@ img {
   font-size: 22px;
   font-family: 'Museo Sans Bold';
   font-weight: 700;
+  width: 520px;
 }
 .interview__subtitle {
 display: block;
@@ -1248,6 +1249,7 @@ font-size: 16px;
   .interview__title {
     font-size: 20px;
     margin-bottom: 15px;
+    width: 400px;
   }
   .interview__subtitle {
     margin-bottom: 20px;
@@ -1433,22 +1435,19 @@ font-size: 16px;
     font-size: 17px;
     max-width: 300px;
   }
-  modal-job
-  modal-job
-  modal-job
-  modal-job
-  modal-job
-  modal-job
-  modal-job
-  modal-job
+  .footer {
+    display: flex;
+    flex-flow: wrap;
   }
   .map {
     width: 100%;
     position: static;
+    order: 2;
   }
   .contacts {
     padding: 0;
     flex-basis: auto;
+    order: 1;
   }
   .contacts-container {
     width: 90%;
@@ -1474,9 +1473,6 @@ font-size: 16px;
     font-size: 16px;
     max-width: 140px;
     line-height: 1.4;
-  }
-  .map {
-    order: 1;
   }
 }
 
@@ -1574,22 +1570,37 @@ font-size: 16px;
   .interview-list {
     width: 264px;
   }
+  .interview__title {
+    width: 270px;
+    text-align: left;
+    font-size: 18px;
+  }
+  .interview__subtitle {
+    margin-bottom: 20px;
+    font-size: 15px;
+    width: 263px;
+    text-align: left;
+  }
   .steps__title {
-    width: 301px;
+    width: 264px;
+    font-size: 18px;
+    line-height: 1.2;
     margin-bottom: 17px;
+  }
+  .steps__subtitle {
+    font-size: 14px;
+    margin-bottom: 17px;
+  }
+  .step__text {
+    font-size: 12px;
   }
   .contacts__title {
     font-size: 19px;
     width: 269px;
   }
   .offer__title {
-<<<<<<< HEAD
-    width: 253px;
-    font-size: 18px;
-=======
     width: 263px;
     font-size: 19px;
->>>>>>> aba06709a429f81f8780c09953e37079cd248007
     font-weight: 400;
     line-height: 1.2;
   }
@@ -1608,6 +1619,12 @@ font-size: 16px;
   .offer-block {
     width: 100%;
   } 
+  .card {
+    margin-bottom: 27px;
+  }
+  .card__title {
+    font-size: 14px;
+  }
 }
 
 
